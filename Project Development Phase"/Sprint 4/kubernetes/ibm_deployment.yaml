@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nutrition-assistant-application
+
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nutrition-assistant-application
+  template:
+    metadata:
+      labels:
+        app: nutrition-assistant-application
